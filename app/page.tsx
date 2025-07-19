@@ -15,6 +15,33 @@ import {
 
 type ViewMode = 'landing' | 'simple' | 'detailed' | 'developer';
 
+type ExperienceType = {
+  title: string;
+  period: string;
+  company: string;
+  location: string;
+  description: string;
+  achievements: string[];
+};
+
+type EducationType = {
+  degree: string;
+  period: string;
+  institution: string;
+  location: string;
+  description: string;
+  gpa: string;
+};
+
+type ProjectType = {
+  name: string;
+  status: string;
+  description: string;
+  tech: string[];
+  url?: string;
+  github?: string;
+};
+
 
 export default function Portfolio() {
   const [currentView, setCurrentView] = useState<ViewMode>('landing');
@@ -55,9 +82,9 @@ export default function Portfolio() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: 'easeInOut' }
+      transition: { duration: 0.8, ease: [0.42, 0, 0.58, 1] } as any
     },
-    exit: { opacity: 0, y: -30, transition: { duration: 0.5 } }
+    exit: { opacity: 0, y: -30, transition: { duration: 0.5 } as any }
   };
 
   // Type-safe stagger for children (used as a separate prop)
@@ -66,20 +93,20 @@ export default function Portfolio() {
       transition: {
         staggerChildren: 0.15,
         delayChildren: 0.2
-      }
+      } as any
     }
   };
 
   const childVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeInOut' } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] } as any }
   };
 
   const cardHoverVariants = {
     hover: {
       y: -8,
       scale: 1.02,
-      transition: { duration: 0.3, ease: 'easeInOut' }
+      transition: { duration: 0.3, ease: [0.42, 0, 0.58, 1] } as any
     }
   };
 
@@ -259,7 +286,7 @@ export default function Portfolio() {
           <motion.div variants={childVariants} className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-600 mx-auto mb-16 rounded-full" />
 
           <motion.div variants={childVariants}>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Let&#39;s Connect</h3>
             <div className="flex justify-center items-center flex-wrap gap-6">
               {[
                 { icon: Mail, href: `mailto:${profileData.email}`, label: "Email" },
@@ -394,7 +421,7 @@ export default function Portfolio() {
                 Key Highlights
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {profileData.highlights.map((highlight, index) => (
+                {profileData.highlights.map((highlight: string, index: number) => (
                   <motion.div 
                     key={index} 
                     className="flex items-center p-6 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300"
@@ -416,7 +443,7 @@ export default function Portfolio() {
                 Work Experience
               </h2>
               <div className="space-y-8">
-                {profileData.experience.map((exp, index) => (
+                {profileData.experience.map((exp: ExperienceType, index: number) => (
                   <motion.div 
                     key={index} 
                     className="relative pl-8 border-l-4 border-gray-900 hover:border-gray-700 transition-colors duration-300"
@@ -435,7 +462,7 @@ export default function Portfolio() {
                       </p>
                       <p className="text-gray-600 mb-4 leading-relaxed">{exp.description}</p>
                       <div className="space-y-2">
-                        {exp.achievements.map((achievement, achIndex) => (
+                        {exp.achievements.map((achievement: string, achIndex: number) => (
                           <div key={achIndex} className="flex items-center text-gray-600">
                             <Star className="w-4 h-4 mr-2 text-yellow-500 flex-shrink-0" />
                             <span>{achievement}</span>
@@ -457,7 +484,7 @@ export default function Portfolio() {
                 Education
               </h2>
               <div className="space-y-6">
-                {profileData.education.map((edu, index) => (
+                {profileData.education.map((edu: EducationType, index: number) => (
                   <motion.div 
                     key={index} 
                     className="bg-gradient-to-r from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:border-gray-300 transition-all duration-300"
@@ -488,13 +515,13 @@ export default function Portfolio() {
             <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Skills</h2>
               <div className="space-y-8">
-                {Object.entries(profileData.skills).map(([category, skills], index) => (
+                {Object.entries(profileData.skills).map(([category, skills], index: number) => (
                   <div key={index}>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 capitalize">
                       {category === 'soft' ? 'Soft Skills' : `${category} Development`}
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {skills.map((skill, skillIndex) => (
+                      {(skills as string[]).map((skill: string, skillIndex: number) => (
                         <motion.div 
                           key={skillIndex} 
                           className="p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl text-center border border-gray-200 hover:border-gray-300 transition-all duration-300"
@@ -518,7 +545,7 @@ export default function Portfolio() {
                 Featured Projects
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {profileData.projects.map((project, index) => (
+                {profileData.projects.map((project: ProjectType, index: number) => (
                   <motion.div 
                     key={index} 
                     className="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden border border-gray-200 hover:border-gray-300 transition-all duration-300 group p-6 flex flex-col justify-between"
@@ -537,7 +564,7 @@ export default function Portfolio() {
                     </div>
                     <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tech.map((tech, techIndex) => (
+                      {project.tech.map((tech: string, techIndex: number) => (
                         <span key={techIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm border border-gray-200">
                           {tech}
                         </span>
@@ -591,12 +618,12 @@ export default function Portfolio() {
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-10 shadow-xl text-white">
               <h2 className="text-3xl font-bold mb-8 flex items-center">
                 <Phone className="w-8 h-8 mr-3" />
-                Let's Work Together
+                Let&#39;s Work Together
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                    Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.
+                    Ready to bring your ideas to life? I&#39;m always excited to work on new projects and collaborate with amazing people.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center">

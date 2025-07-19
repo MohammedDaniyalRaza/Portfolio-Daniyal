@@ -128,11 +128,11 @@ const profileData = {
     },
     {
       id: 3,
-      name: "Portfolio Generator",
-      description: "AI-powered portfolio generator that creates beautiful, responsive portfolios based on user input and preferences.",
-      tech: ["Next.js", "OpenAI API", "Tailwind CSS", "Prisma", "PostgreSQL"],
-      status: "In Development",
-      github: "https://github.com/daniyalraza/portfolio-generator",
+      name: "Pizza Delivery App",
+      description: "A full-stack pizza delivery application with a robust admin panel for order management, menu customization, and real-time delivery tracking.",
+      tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Clerk", "COD"],
+      status: "Completed",
+      github: "https://github.com/daniyalraza/pizza-delivery-app"
     }
   ],
   testimonials: [
