@@ -716,11 +716,6 @@ export default function Portfolio() {
                       <div className="flex flex-col gap-2 w-full">
                         <div className="overflow-x-auto w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
                           <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
-                            http://localhost:3000/api/profile
-                          </code>
-                        </div>
-                        <div className="overflow-x-auto w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
-                          <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
                             https://mohammeddaniyalraza.vercel.app/api/profile
                           </code>
                         </div>
