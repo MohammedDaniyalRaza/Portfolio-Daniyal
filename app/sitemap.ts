@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mohammeddaniyalraza.vercel.app'
+  const baseUrl = 'https://mohammeddaniyalraza.vercel.app/'
   
   return [
     {
@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/api/profile`,
+      url: `${baseUrl}api/profile`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
