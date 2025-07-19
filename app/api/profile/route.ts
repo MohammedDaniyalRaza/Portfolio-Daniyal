@@ -131,7 +131,7 @@ const profileData = {
       description: "A full-stack pizza delivery application with a robust admin panel for order management, menu customization, and real-time delivery tracking.",
       tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Clerk", "COD"],
       status: "Completed",
-      url: "depizzatownstore.vercel.app",
+      url: "https://depizzatownstore.vercel.app/",
       github: "https://github.com/MohammedDaniyalRaza/depizzatown-store"
     }
   ],
