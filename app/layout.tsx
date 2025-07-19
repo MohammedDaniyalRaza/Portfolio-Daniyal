@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://mohammeddaniyalraza.vercel.app',
+    canonical: 'https://mohammeddaniyalraza.vercel.app/',
   },
   openGraph: {
     title: 'Mohammed Daniyal Raza - Frontend Engineer & Founder of UXU Tech',
-    description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
+    description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 2+ years experience.',
     type: 'website',
-    url: 'https://mohammeddaniyalraza.vercel.app',
+    url: 'https://mohammeddaniyalraza.vercel.app/',
     siteName: 'Mohammed Daniyal Raza',
     locale: 'en_US',
     images: [
@@ -74,9 +74,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mohammed Daniyal Raza - Frontend Engineer & UXU Tech Founder',
-    description: 'Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
+    description: 'Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 2+ years experience.',
     creator: '@daniyalrazaqa',
-    images: ['https://mohammeddaniyalraza.vercel.app/og-image.jpg'],
+    images: ['https://mohammeddaniyalraza.vercel.app/profile-image.png'],
   },
   verification: {
     google: 'lVdTc8vSPPj34ef28O-HDfiIIMPvKJdpXxTc2nSEFHQ',
@@ -97,6 +97,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
+      {/* create a head tag */}
+      <head>
+        <meta name="google-site-verification" content="a7f528bdae0add45" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>

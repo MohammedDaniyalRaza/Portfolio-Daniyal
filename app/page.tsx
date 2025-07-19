@@ -930,7 +930,7 @@ fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
               "alternateName": ["Daniyal Raza", "Mohammed Daniyal", "Daniyal"],
               "jobTitle": "Frontend Engineer",
               "description": "Frontend Engineer and Founder of UXU Tech startup with 5+ years experience in React, Next.js, and TypeScript",
-              "url": "https://mohammeddaniyalraza.vercel.app",
+              "url": "https://mohammeddaniyalraza.vercel.app/",
               "image": "https://mohammeddaniyalraza.vercel.app/profile-image.png",
               "email": "mohammeddaniyalr@gmail.com",
               "telephone": "+92 3347725261",
