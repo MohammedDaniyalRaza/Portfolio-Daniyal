@@ -59,7 +59,7 @@ const profileData = {
       id: 3,
       title: "Customer Service Representative (Team Leader)",
       company: "MCS Digitizing",
-      period: "2023 (4 months)",
+      period: "2025 - Present",
       location: "Karachi, Pakistan",
       description: "Worked as a CSR and later promoted to Team Leader at a digitizing company providing embroidery and vector services to international clients.",
       achievements: [
