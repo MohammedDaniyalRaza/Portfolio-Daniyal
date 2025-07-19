@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Mohammed Daniyal Raza - Frontend Engineer & Founder of UXU Tech',
-  description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript. Professional portfolio showcasing 5+ years experience in web development and startup leadership.',
+  description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript. Professional portfolio showcasing 2+ years experience in web development and startup leadership.',
   keywords: [
     'Mohammed Daniyal Raza',
     'Daniyal Raza', 
@@ -53,18 +53,18 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://daniyalraza.vercel.app',
+    canonical: 'https://mohammeddaniyalraza.vercel.app',
   },
   openGraph: {
     title: 'Mohammed Daniyal Raza - Frontend Engineer & Founder of UXU Tech',
     description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
     type: 'website',
-    url: 'https://daniyalraza.vercel.app',
+    url: 'https://mohammeddaniyalraza.vercel.app',
     siteName: 'Mohammed Daniyal Raza Portfolio',
     locale: 'en_US',
     images: [
       {
-        url: 'https://daniyalraza.vercel.app/og-image.jpg',
+        url: 'https://mohammeddaniyalraza.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Mohammed Daniyal Raza - Frontend Engineer & UXU Tech Founder',
@@ -76,12 +76,10 @@ export const metadata: Metadata = {
     title: 'Mohammed Daniyal Raza - Frontend Engineer & UXU Tech Founder',
     description: 'Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
     creator: '@daniyalrazaqa',
-    images: ['https://daniyalraza.vercel.app/og-image.jpg'],
+    images: ['https://mohammeddaniyalraza.vercel.app/'],
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: 'lVdTc8vSPPj34ef28O-HDfiIIMPvKJdpXxTc2nSEFHQ',
   },
   category: 'technology',
   classification: 'Portfolio Website',
