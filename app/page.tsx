@@ -796,7 +796,6 @@ export default function Portfolio() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-3">JavaScript / Fetch API</h3>
                     <div className="bg-gray-900 rounded-xl p-6 relative">
                       <CopyCodeButton className="absolute top-3 right-3 z-10"  code={`
-// Production
 fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
   .then(response => response.json())
   .then(data => {
@@ -809,7 +808,6 @@ fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
                       <div className="overflow-x-auto overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
                         <pre className="text-green-400 text-sm whitespace-pre-wrap">
 {`
-// Production
 fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
   .then(response => response.json())
   .then(data => {

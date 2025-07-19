@@ -17,7 +17,7 @@ const profileData = {
     facebook: "https://facebook.com",
     medium: "https://mohammeddaniyalraza.medium.com/"
   },
-  about: "I'm a dedicated frontend engineer with a passion for creating beautiful, functional web applications. As the founder of UXU Tech, I lead a team focused on delivering exceptional user experiences through innovative design and cutting-edge technology. My expertise spans across modern web technologies, with a particular focus on React ecosystem and user interface design.",
+  about: "I'm a self-taught Frontend Developer and the founder of UXU Tech, passionate about building clean and user-friendly web interfaces. I specialize in HTML, CSS, JavaScript, TypeScript, and modern frameworks like React and Next.js. I do my best for everything.",
   highlights: [
     "Founder & CEO of UXU Tech Startup",
     "2+ years of Frontend Development Experience", 
