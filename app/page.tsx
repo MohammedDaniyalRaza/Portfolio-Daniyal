@@ -721,7 +721,7 @@ export default function Portfolio() {
                         </div>
                         <div className="overflow-x-auto w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
                           <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
-                            https://mohammeddaniyal.vercel.app/api/profile
+                            https://mohammeddaniyalraza.vercel.app/api/profile
                           </code>
                         </div>
                       </div>
@@ -740,7 +740,7 @@ export default function Portfolio() {
                         type="button"
                         variant="outline" 
                         size="sm"
-                        onClick={() => copyToClipboard('https://mohammeddaniyal.vercel.app/api/profile')}
+                        onClick={() => copyToClipboard('https://mohammeddaniyalraza.vercel.app/api/profile')}
                         className="bg-white/10 border-white/20 text-white hover:bg-white/20"
                       >
                         {copied ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />} Prod
@@ -748,7 +748,7 @@ export default function Portfolio() {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={() => window.open('https://mohammeddaniyal.vercel.app/api/profile', '_blank')}
+                        onClick={() => window.open('https://mohammeddaniyalraza.vercel.app/api/profile', '_blank')}
                         className="bg-white/10 border-white/20 text-white hover:bg-white/20"
                       >
                         <ExternalLink className="w-4 h-4" />
@@ -821,7 +821,7 @@ fetch('http://localhost:3000/api/profile')
   });
 
 // Production
-fetch('https://mohammeddaniyal.vercel.app/api/profile')
+fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
   .then(response => response.json())
   .then(data => {
     console.log('Portfolio data:', data);
@@ -844,7 +844,7 @@ fetch('http://localhost:3000/api/profile')
   });
 
 // Production
-fetch('https://mohammeddaniyal.vercel.app/api/profile')
+fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
   .then(response => response.json())
   .then(data => {
     console.log('Portfolio data:', data);
