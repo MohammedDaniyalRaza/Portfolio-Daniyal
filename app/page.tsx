@@ -713,10 +713,17 @@ export default function Portfolio() {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-8 gap-4 min-w-0">
                     <div className="flex items-center space-x-4 w-full min-w-0">
                       <span className="bg-green-500 text-white px-3 py-1 rounded-lg text-sm font-semibold flex-shrink-0">GET</span>
-                      <div className="overflow-x-auto  w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
-                        <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
-                          https://localhost:3000/api/profile
-                        </code>
+                      <div className="flex flex-col gap-2 w-full">
+                        <div className="overflow-x-auto w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
+                          <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
+                            http://localhost:3000/api/profile
+                          </code>
+                        </div>
+                        <div className="overflow-x-auto w-full max-w-full overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
+                          <code className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-mono break-all whitespace-nowrap block">
+                            https://mohammeddaniyal.vercel.app/api/profile
+                          </code>
+                        </div>
                       </div>
                     </div>
                     <div className="flex space-x-2">
@@ -724,15 +731,24 @@ export default function Portfolio() {
                         type="button"
                         variant="outline" 
                         size="sm"
-                        onClick={() => copyToClipboard('https://localhost:3000/api/profile')}
+                        onClick={() => copyToClipboard('http://localhost:3000/api/profile')}
                         className="bg-white/10 border-white/20 text-white hover:bg-white/20"
                       >
-                        {copied ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                        {copied ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />} Local
+                      </Button>
+                      <Button 
+                        type="button"
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => copyToClipboard('https://mohammeddaniyal.vercel.app/api/profile')}
+                        className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+                      >
+                        {copied ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />} Prod
                       </Button>
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={() => window.open('https://localhost:3000/api/profile', '_blank')}
+                        onClick={() => window.open('https://mohammeddaniyal.vercel.app/api/profile', '_blank')}
                         className="bg-white/10 border-white/20 text-white hover:bg-white/20"
                       >
                         <ExternalLink className="w-4 h-4" />
@@ -793,10 +809,50 @@ export default function Portfolio() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-3">JavaScript / Fetch API</h3>
                     <div className="bg-gray-900 rounded-xl p-6 relative">
-                      <CopyCodeButton className="absolute top-3 right-3 z-10"  code={`// Fetch portfolio data\nfetch('https://localhost:3000/api/profile')\n  .then(response => response.json())\n  .then(data => {\n    console.log('Portfolio data:', data);\n    // Use the data in your application\n  })\n  .catch(error => {\n    console.error('Error:', error);\n  });`} />
+                      <CopyCodeButton className="absolute top-3 right-3 z-10"  code={`// Local
+fetch('http://localhost:3000/api/profile')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Portfolio data:', data);
+    // Use the data in your application
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+// Production
+fetch('https://mohammeddaniyal.vercel.app/api/profile')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Portfolio data:', data);
+    // Use the data in your application
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });`} />
                       <div className="overflow-x-auto overflow-y-auto max-h-60 bg-transparent scrollbar-dark">
                         <pre className="text-green-400 text-sm whitespace-pre-wrap">
-{`// Fetch portfolio data\nfetch('https://localhost:3000/api/profile')\n  .then(response => response.json())\n  .then(data => {\n    console.log('Portfolio data:', data);\n    // Use the data in your application\n  })\n  .catch(error => {\n    console.error('Error:', error);\n  });`}
+{`// Local
+fetch('http://localhost:3000/api/profile')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Portfolio data:', data);
+    // Use the data in your application
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+// Production
+fetch('https://mohammeddaniyal.vercel.app/api/profile')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Portfolio data:', data);
+    // Use the data in your application
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });`}
                         </pre>
                       </div>
                     </div>
