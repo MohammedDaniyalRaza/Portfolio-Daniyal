@@ -111,56 +111,57 @@ const profileData = {
     {
       id: 1,
       name: "UXU Tech Platform",
-      description: "A comprehensive platform for digital solutions and user experience optimization.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Framer Motion"],
+      description: "A full-fledged business website for UXU Tech, showcasing services, portfolio, contact details, FAQs, and about section to attract and engage clients.",
+      tech: ["React Js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       status: "Live",
       url: "https://uxutech.vercel.app",
-      github: "https://github.com/daniyalraza/uxutech",
-    },
+    },    
     {
       id: 2,
-      name: "E-commerce Dashboard",
-      description: "Modern admin dashboard for e-commerce management with real-time analytics, inventory management, and customer insights.",
-      tech: ["React", "Node.js", "MongoDB", "Chart.js", "Material-UI"],
+      name: "Password Strength Checker",
+      description: "A Python-based web app built with Streamlit that evaluates password strength based on length, character variety, and common password patterns.",
+      tech: ["Python", "Streamlit"],
       status: "Live",
-      url: "https://ecommerce-dash.vercel.app",
-      github: "https://github.com/daniyalraza/ecommerce-dashboard",
-    },
+      url: "https://passwordstrengthchecked.streamlit.app/",
+      github: "https://github.com/daniyalraza/password-strength-checker"
+    },    
     {
       id: 3,
       name: "Pizza Delivery App",
       description: "A full-stack pizza delivery application with a robust admin panel for order management, menu customization, and real-time delivery tracking.",
       tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Clerk", "COD"],
       status: "Completed",
-      github: "https://github.com/daniyalraza/pizza-delivery-app"
+      url: "depizzatownstore.vercel.app",
+      github: "https://github.com/MohammedDaniyalRaza/depizzatown-store"
     }
   ],
   testimonials: [
     {
       id: 1,
-      name: "Sarah Johnson",
-      position: "Product Manager at TechCorp",
-      content: "Mohammed delivered exceptional work on our web application. His attention to detail and technical expertise made our project a huge success.",
+      name: "Noman Farooq",
+      position: "CEO at CYT Racing Company",
+      content: "UXU Tech delivered the quality we were expecting and more. Their attention to detail and commitment throughout the project was truly impressive. Highly recommended!",
       rating: 5
-    },
+    },    
     {
       id: 2,
-      name: "Ahmed Ali",
-      position: "CEO at StartupXYZ",
-      content: "Working with Mohammed and UXU Tech was a game-changer for our startup. They transformed our vision into a beautiful, functional product.",
+      name: "Junaid Rana",
+      position: "Founder of Pizza Town",
+      content: "Even as a non-profit client, I received full dedication from Mohammed and team. They built a beautiful full-stack website with real passion and professionalism.",
       rating: 5
     }
+  
   ],
   stats: {
     projectsCompleted: 50,
-    clientsSatisfied: 35,
-    yearsExperience: 5,
-    teamSize: 8
+    clientsSatisfied: 5,
+    yearsExperience: 2,
+    teamSize: 3
   },
   availability: {
     status: "Available for new projects",
     nextAvailable: "January 2025",
-    workingHours: "9 AM - 6 PM PKT",
+    workingHours: "24/7 hours",
     responseTime: "Within 24 hours"
   },
   lastUpdated: new Date().toISOString()
