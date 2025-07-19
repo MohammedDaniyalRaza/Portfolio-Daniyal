@@ -60,11 +60,11 @@ export const metadata: Metadata = {
     description: 'Mohammed Daniyal Raza is a Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
     type: 'website',
     url: 'https://mohammeddaniyalraza.vercel.app',
-    siteName: 'Mohammed Daniyal Raza Portfolio',
+    siteName: 'Mohammed Daniyal Raza',
     locale: 'en_US',
     images: [
       {
-        url: 'https://mohammeddaniyalraza.vercel.app/og-image.jpg',
+        url: 'https://mohammeddaniyalraza.vercel.app/profile-image.png',
         width: 1200,
         height: 630,
         alt: 'Mohammed Daniyal Raza - Frontend Engineer & UXU Tech Founder',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     title: 'Mohammed Daniyal Raza - Frontend Engineer & UXU Tech Founder',
     description: 'Frontend Engineer and Founder of UXU Tech startup. Expert in React, Next.js, TypeScript with 5+ years experience.',
     creator: '@daniyalrazaqa',
-    images: ['https://mohammeddaniyalraza.vercel.app/'],
+    images: ['https://mohammeddaniyalraza.vercel.app/og-image.jpg'],
   },
   verification: {
     google: 'lVdTc8vSPPj34ef28O-HDfiIIMPvKJdpXxTc2nSEFHQ',
