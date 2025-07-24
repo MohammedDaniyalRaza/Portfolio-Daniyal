@@ -933,7 +933,7 @@ fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
               "url": "https://mohammeddaniyalraza.vercel.app/",
               "image": "https://mohammeddaniyalraza.vercel.app/profile-image.png",
               "email": "mohammeddaniyalr@gmail.com",
-              "telephone": "+92 3347725261",
+              "telephone": "+92 3347715261",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Karachi",
@@ -969,7 +969,7 @@ fetch('https://mohammeddaniyalraza.vercel.app/api/profile')
               ],
               "alumniOf": {
                 "@type": "EducationalOrganization",
-                "name": "University of Karachi"
+                "name": "Dehli Boys Secondry School Kareemabad Karachi, Sindh Pakistan."
               }
             })
           }}

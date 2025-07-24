@@ -6,14 +6,14 @@ const profileData = {
   bio: "Passionate frontend engineer and founder of UXU Tech, creating innovative digital experiences.",
   country: "Pakistan",
   email: "mohammeddaniyalr@gmail.com",
-  phone: "+92 3347725261",
+  phone: "+92 3347715261",
   location: "Karachi, Pakistan",
-  website: "https://daniyalraza.dev",
+  website: "https://daniyalrazaportfolio.vercel.app/",
   social: {
     linkedin: "https://www.linkedin.com/in/mohammed-daniyal-raza-aa26b22ba/",
     github: "https://github.com/MohammedDaniyalRaza/",
     twitter: "https://x.com/daniyalrazaqa",
-    instagram: "https://instagram.com",
+    instagram: "https://instagram.com/mohammeddaniyalraza",
     facebook: "https://facebook.com",
     medium: "https://mohammeddaniyalraza.medium.com/"
   },
@@ -75,9 +75,9 @@ const profileData = {
     {
       id: 1,
       degree: "Matriculation in Computer Science",
-      institution: "Dehli School",
+      institution: "Dehli Boys Secondry School Kareemabad",
       period: "Completed 2023",
-      location: "Karachi, Pakistan",
+      location: "Karachi, Sindh Pakistan",
       description: "Completed matriculation with a focus on science and computer studies. Actively participated in tech-related activities and courses.",
       gpa: "N/A",
       coursework: [
@@ -179,7 +179,7 @@ export async function GET() {
     return NextResponse.json(
       { 
         success: false, 
-        error: "Failed to fetch profile data",
+        error: "Failed to fetch profile data. Refresh Your Page!",
         timestamp: new Date().toISOString()
       },
       { status: 500 }
